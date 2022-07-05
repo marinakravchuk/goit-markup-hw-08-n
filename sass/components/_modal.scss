@@ -1,0 +1,242 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+
+    transform:  opacity var(--timing-duration) var(--timing-function), 
+    visibility var(--timing-duration) var(--timing-function);  
+}
+
+.backdrop.is-hidden {
+    opacity:0; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+.modal {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    
+    transform: translate(-50%, -50% );
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.75);
+        opacity: 0;
+      }
+}
+
+
+
+
+.modal-bnt_close {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    fill: var(--btn-color-hb);
+}
+}
+
+
+
+.modal_title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: #212121;
+    }
+
+    /*Форма*/
+
+    .modal_field {
+    margin-bottom: 10px;
+    }  
+
+    .input-wrap {
+    position: relative;
+    }
+
+    .modal-icon {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+
+    .modal-input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    fill: currentColor;
+    padding-left: 30px;
+    outline: none;
+    transition: border-color 250ms var(--timing-function), 
+    fill 250ms var(--timing-function) ;
+    &:focus,
+    &:hover {
+    border-color: #2196F3;
+    }    
+}
+
+    
+
+
+    .modal-input:focus + .modal-icon,
+    .modal-input:hover + .modal-icon
+    {
+    fill: #2196F3;
+    }
+
+    .modal_label {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    color: #757575;
+    }
+
+    textarea {
+        resize: none;
+        } 
+    
+.modal-text {
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    transition: border 250ms var(--transition-cubic);
+    &:focus,
+&:hover {
+    border: 1px solid #2196F3;
+}
+}
+
+
+
+/*Чекбокс*/
+
+.covenant{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; ;
+    
+}
+
+.covenant-title  {
+    padding-left: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 2px solid  #212121;
+        border-radius: 3px;
+        margin-right: 8px;
+    } 
+    }
+
+
+
+.checkbox-policy:checked +.covenant-title::before {
+    background-color: #2196F3;
+    background-image: url(../images/icon/checkbox.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.checkbox-policy:focus +.covenant-title::before {
+    border-color: #2196F3;
+}
+
+.checkbox-policy:focus:not(:checked) +.covenant-title::before {
+    border-color: #2196F3;
+  }
+
+  .checkbox-policy:disabled +.covenant-title::before {
+    border-color: #2196F3;
+  }
+
+.covenant-link {
+    display: block;
+    padding-left: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+    .modal-bnt-send {
+    
+        width: 200px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    
+        background: var(--btn-color-hb);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        transition: background var(--timing-duration) var(--timing-function);
+    
+        &:hover,
+        &:focus {
+            background: #188CE8;
+        }  
+    }
+    
+
+ 

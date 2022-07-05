@@ -1,0 +1,161 @@
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-color {
+    color: var(--btn-color-hb);
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.header-icon {
+
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/*Header-Навигация */
+.nav__site {
+    display: flex;
+    justify-content: center;
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size);
+    line-height: 1.14;
+    &:hover,
+&:focus {
+    color: var(--btn-color-hb);
+}
+}
+
+
+
+
+
+
+.contact {
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.nav__site:first-child {
+    margin-left: 93px;
+}
+
+.nav__site .nav__item {
+    margin-right: 50px;
+}
+
+.contact .contact__item:last-child {
+    margin-right: 0;
+}
+
+.nav__site .current {
+    color: var(--btn-color-hb);
+}
+
+
+.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+
+}
+
+
+
+/*Header-Контактные линки */
+.contact {
+    margin-left: auto;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14;
+    color: var(--text-color);
+    padding-top: 5px;
+}
+
+.contact__e {
+    margin-right: 30px;
+}
+
+.contact__e,
+.contact__tel {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+
+transition: color var(--timing-duration) var(--timing-function);
+
+.contact &:hover,
+.contact &:focus,
+.contact &:hover,
+.contact &:focus {
+    color: var(--btn-color-hb);
+}
+
+
+}
+
+
+
+.nav {
+    /*display: block;*/
+    align-items: baseline;
+
+}
+
+/*Ссылки в шапке*/
+.nav__link {
+    display: flex;
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--btn-color-text);
+
+    transition: color var(--timing-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--btn-color-hb);
+    }
+
+}
+
+

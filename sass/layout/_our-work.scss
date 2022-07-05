@@ -1,0 +1,49 @@
+.our-work__container {
+    padding-bottom: 94px;
+}
+
+.our-work__container>.our-work__list {
+    display: flex;
+
+}
+
+.our-work__list .our-work__item+.our-work__item {
+    flex-basis: calc(100% / 3 - 30px);
+}
+
+.our-work__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.our-work__item {
+    position: relative;
+}
+
+.work-card-text {
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 370px;
+    height: 70px;
+    left: 615px;
+    top: 1435px;
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    
+}
+
+.our-work__text  {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        text-transform: uppercase;
+        line-height: 1.14;
+        font-weight: 700;
+        color: #ffffff;
+        background: rgba(47, 48, 58, 0.8);
+    }

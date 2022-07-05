@@ -1,0 +1,214 @@
+.logo-adress {
+    margin-right: 70px;
+}
+
+.footer>.container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__section {
+    margin: 0 auto;
+    background: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    & .footer {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+
+
+
+.contact-link__list .item:first-child {
+    margin-top: 20px;
+}
+
+.bottom-logo-color {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.contact-link__list .item {
+    margin-bottom: 9px;
+}
+
+.e-link,
+.ph-link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    display: block;
+transition: color var(--timing-duration) var(--timing-function);
+
+}
+
+.contact-link__list .e-link:hover,
+.contact-link__list .e-link:focus,
+.contact-link__list .addres-link:hover,
+.contact-link__list .addres-link:focus,
+.contact-link__list .ph-link:hover,
+.contact-link__list .ph-link:focus {
+    color: var(--btn-color-hb);
+}
+
+.addres-link {
+    text-decoration: none;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    transition: color var(--timing-duration) var(--timing-function);
+}
+
+.footer-soc__titel {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-soc {
+margin-right: 93px;
+}
+
+
+.footer-soc__list {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer-soc__item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.footer-soc__icon {
+    fill: #FFFFFF;
+}
+
+.footer-soc__link {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #ffffff;
+
+    transition: background-color var(--timing-duration) var(--timing-function);
+    &:hover,
+&:focus {
+    background-color: var(--btn-color-hb);
+}
+}
+
+
+
+.footer-soc__link:hover .footer-soc_icon,
+.footer-soc__link:focus .footer-soc_icon {
+    fill: var(--default-white);
+}
+
+.footer-form {
+  margin-right: auto;
+}
+
+.footer-form__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.footer-form__mail {
+    display: flex;
+    border: none;
+}
+
+
+.footer-form__input {
+    width: 358px;
+    height: 50px;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    padding-left: 16px;
+    margin-right: 12px;
+
+    transition: border var(--timing-duration) var(--timing-function);
+
+
+    &:focus,
+&:hover {
+    border-color: var(--btn-color-hb);
+    }
+}
+
+
+
+
+
+.footer-form__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--btn-color-hb);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    padding-left: 29px;
+    color: #ffffff;
+    fill: currentColor;
+    transition: fill var(--timing-duration) var(--timing-function);
+    transition: background-color var(--timing-duration) var(--timing-function);
+}
+
+.footer-form__btn:hover,
+.footer-form__btn:focus {
+    background-color: #ffffff;
+    color: var(--btn-color-hb);
+}
+
+.icon-send {
+    position: absolute;
+    right: 28px;
+    margin-left: 10px;
+    
+&:hover,
+&:focus {
+    background-color: #ffffff;
+    color: var(--btn-color-hb);
+    fill:  var(--btn-color-hb);
+}
+}
