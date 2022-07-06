@@ -1,25 +1,40 @@
-.benefit {
+/*.benefit {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (min-width: 1119px) {
     padding-top: 94px;
     padding-bottom: 94px;
-}
+    }
+
+} уже определенно правилом для секций */
 
 .benefit__list{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 0px;
     padding: 0px;
     margin-left: -30px;
 
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 .benefit__title{
+
     font-style: normal;
     font-weight: 700;
     font-size: var(--font-size);
     line-height: 1.14;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width:768px) {
+      text-align: center;
+            
+    }
 }
 
 .benefit__text {
@@ -32,6 +47,15 @@
 }
 
 .benefit__item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px)
+    {
     display: flex;
     flex-wrap: wrap;
     width: 270px;
@@ -42,7 +66,7 @@
         margin-right: 0;
     }
 }
-
+}
 
 
 .benefit-icon {
@@ -52,13 +76,17 @@
 
 .icons {
     margin-bottom: 30px;
-    width: 270px;
+    width: 100%;
     height: 120px;
     justify-content: center;
     display: inline-flex;
     align-items: center;
     background: #F5F4FA;
     border-radius: 4px;
+
+    @media screen and (min-width:768px) {
+        width: 270px;
+            }
 }
 
 /*
