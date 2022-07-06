@@ -46,14 +46,33 @@
 }
 
 
+.contact-links {
+
+    display: none;  
+
+
+    @media screen and (min-width:768px)
+    {
+        display: flex;
+  align-items: baseline;
+   
+    }
+
+
+}
 
 
 
 
 .contact {
-    padding: 0;
-    margin: 0;
-    display: flex;
+    display: none;
+
+    @media screen and (min-width:768px){
+        padding: 0;
+        margin: 0;
+       display: flex;       
+    }
+
 
 }
 
@@ -129,11 +148,7 @@ transition: color var(--timing-duration) var(--timing-function);
 
 
 
-.nav {
-    /*display: block;*/
-    align-items: baseline;
 
-}
 
 /*Ссылки в шапке*/
 .nav__link {
