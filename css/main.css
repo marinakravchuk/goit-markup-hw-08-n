@@ -129,6 +129,10 @@ button {
   border: none;
 }
 
+.header {
+  position: relative;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -144,12 +148,19 @@ button {
 }
 
 .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: #000000;
+}
+@media screen and (min-width: 780px) {
+  .logo {
+    padding: 0;
+  }
 }
 
 .header-icon {
@@ -223,16 +234,36 @@ button {
 
 /*Header-Контактные линки */
 .contact {
-  margin-left: auto;
   font-style: normal;
   font-weight: 400;
   line-height: 1.14;
   color: var(--text-color);
-  padding-top: 5px;
+}
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    margin-left: auto;
+    padding-top: 5px;
+  }
 }
 
 .contact__e {
   margin-right: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .contact__e {
+    margin-bottom: 10px;
+  }
 }
 
 .contact__e,
@@ -240,7 +271,7 @@ button {
   display: flex;
   font-style: normal;
   font-weight: 500;
-  font-size: var(--font-size);
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
@@ -252,6 +283,12 @@ button {
 .contact .contact__tel:hover,
 .contact .contact__tel:focus {
   color: var(--btn-color-hb);
+}
+@media screen and (min-width: 1200px) {
+  .contact__e,
+.contact__tel {
+    font-size: var(--font-size);
+  }
 }
 
 /*Ссылки в шапке*/
@@ -638,10 +675,6 @@ button {
   }
 }
 
-.our-work__container {
-  padding-bottom: 94px;
-}
-
 .our-work__container > .our-work__list {
   display: flex;
 }
@@ -906,28 +939,59 @@ button {
 
 .set {
   border-top: 1px solid #ECECEC;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width1200px) {
+  .set {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.set__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -30px;
+@media screen and (min-width: 768px) {
+  .set__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
 }
 
 .set__list > .set__item {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin-right: 30px;
+  aspect-ratio: auto 450/294;
   margin-bottom: 30px;
-  /*outline: 1px solid red;*/
+}
+.set__list > .set__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .set__list > .set__item {
+    width: 354px;
+    margin-right: 30px;
+  }
+  .set__list > .set__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .set__list > .set__item {
+    width: 370px;
+    margin-right: 30px;
+  }
+  .set__list > .set__item:nth-child(n+7) {
+    margin-bottom: 0;
+  }
+  .set__list > .set__item:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
+/*
 .set__item:nth-child(3n) {
-  margin-right: 0px;
-  padding-right: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
 }
-
+*/
 .card-content__title {
   font-weight: 700;
   font-size: 18px;
@@ -1063,7 +1127,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .footer-soc {
-    margin-top: 0;
+    margin-top: 10px;
     margin-right: 93px;
     justify-content: center;
     display: inline-block;
@@ -1118,6 +1182,7 @@ button {
   .footer-form {
     /*display: flex;*/
     margin-right: auto;
+    margin-top: 10px;
   }
 }
 
@@ -1211,12 +1276,29 @@ button {
 /* Кнопки-Портфолио */
 .nav-list_card {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .nav-list_card {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-list_card {
+    margin-bottom: 50px;
+  }
 }
 
 .nav-list_item {
   margin-left: 8px;
+}
+@media screen and (max-width: 767px) {
+  .nav-list_item {
+    margin-bottom: 15px;
+  }
 }
 
 .nav-list_card .site-nav-btn {

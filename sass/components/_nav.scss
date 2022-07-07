@@ -3,13 +3,27 @@
 
 .nav-list_card {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 25px;
 
+    @media screen and (min-width:768px) {
+        justify-content: center;
+        margin-bottom: 30px;   
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;  
+}
 }
 
 .nav-list_item {
     margin-left: 8px;
+    @media screen and (max-width: 767px)
+{
+    margin-bottom: 15px;
+}
+
 }
 
 .nav-list_card .site-nav-btn {

@@ -29,8 +29,8 @@
 
             <nav class="contact-links nav">
                 <ul class=" nav__site">
-                    <li class="nav__item"><a href="./index.html" class="nav__link ">Студия</a></li>
-                    <li class="nav__item"><a href="./portfolio.html" class=" nav__link current">Портфолио</a></li>
+                    <li class="nav__item"><a href="./index.html" class="nav__link  current">Студия</a></li>
+                    <li class="nav__item"><a href="./portfolio.html" class=" nav__link">Портфолио</a></li>
                     <li class="nav__item"><a href="" class=" nav__link">Контакты</a></li>
                 </ul>
             </nav>
@@ -44,6 +44,91 @@
                             <use href="./images/symbol-defs-1.svg#icon-smartphone-1"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            data-mobile-menu__button
+          >
+            <svg
+              class="menu__icon"
+              height="40"
+              width="40"
+              aria-label="переключатель меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs-1.svg#icon-menu_40px-1"
+              ></use>
+            </svg>
+          </button>
+          <!-- мобильно меню-->
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button
+              class="menu-toggle js-close-menu"
+              type="button"
+              aria-expanded="false"
+              data-mobile-menu__button
+            >
+              <svg
+                class="menu__icon"
+                height="24"
+                width="24"
+                aria-label="переключатель меню"
+              >
+                <use href="./images/symbol-defs-1.svg#icon-close-black-18dp-2-1-2-1"></use>
+              </svg>
+            </button>
+            <ul class="menu__nav">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link current">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+            <div>
+              <ul class="menu__contacts">
+                <li class="menu__item">
+                  <a href="tel:+380961111111" class="menu__contacts"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="mailto:info@devstudio.com" class="menu__mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu__social-list">
+                <li class="menu__social-item">
+                  <a href="" class="menu__socials" rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="menu__social-item">
+                  <a href="" class="menu__socials" rel="noopener noreferrer"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="menu__social-item">
+                  <a href="" class="menu__socials" rel="noopener noreferrer"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="menu__social-item">
+                  <a href="" class="menu__socials" rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+    
         </div>
     </header>
 
@@ -55,7 +140,7 @@
             <!--Навигация-->
 
             <div class="container nav-list">
-                <ul class="card-nav-list nav-list_card">
+                <ul class="nav-list_card">
                     <li class="nav-list_item"><button type="button" class="site-bnt">Все</button></li>
                     <li class="nav-list_item"><button type="button" class="site-bnt">Веб-сайты</button></li>
                     <li class="nav-list_item"><button type="button" class="site-bnt">Приложения</button></li>
@@ -196,13 +281,16 @@
             </div>
         </section>
     </main>
+    <script defer src="js/menu.js"></script>
 </body>
 
 
 <footer>
     <section class="footer__section">
-    <div class="container footer">
-    <div class="logo-adress">
+    <div class="container">
+    <div class="footer">
+    <div class="footer__tab">
+        <div class="logo-adress">
         <a href="./index.html" class="logo"><span class="logo-color">Web</span><span class="bottom-logo-color">Studio</span></a>
         <address>
         <ul class="contact-link__list">
@@ -217,9 +305,9 @@
                         <li class="item"><a href="tel:+380961111111" class="ph-link">+38 096 111 11 11</a></li>
                     </ul>
         </address>
-    </div>
+        </div>
 
-    <div class="footer-soc">
+        <div class="footer-soc">
         <p class="footer-soc__titel">Присоединяйтесь</p>
         <ul class="footer-soc__list">
         <li class="footer-soc__item">
@@ -254,9 +342,9 @@
         </a>
         </li>
         </ul>
-
+        </div>
     </div>
-<div class="footer-form">
+        <div class="footer-form">
         <p class="footer-form__title">Подпишитесь на рассылку</p>
         <form class="footer-form__mail">
             <input type="email" class="footer-form__input" name="footer-mail" placeholder="E-mail" id="footer-mail">
@@ -268,6 +356,7 @@
         </form>
         </div>  
     </div>
+</div>
     </section>
 </footer>
 

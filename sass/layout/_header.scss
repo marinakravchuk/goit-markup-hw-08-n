@@ -1,3 +1,8 @@
+.header {
+position: relative;
+
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -13,12 +18,18 @@
 }
 
 .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-decoration: none;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     color: #000000;
+
+    @media screen  and (min-width: 780px){
+        padding: 0;
+    }
 }
 
 .header-icon {
@@ -53,8 +64,8 @@
 
     @media screen and (min-width:768px)
     {
-        display: flex;
-  align-items: baseline;
+       display: flex;
+       align-items: baseline;
    
     }
 
@@ -110,17 +121,33 @@
 
 /*Header-Контактные линки */
 .contact {
-    margin-left: auto;
-
     font-style: normal;
     font-weight: 400;
     line-height: 1.14;
     color: var(--text-color);
-    padding-top: 5px;
+
+    @media screen and (max-width:767px){
+        display: none;  
+       }
+  
+       @media screen and (min-width:768px){
+        display: block;  
+       }
+    
+
+     @media screen and (min-width:1200px) {
+     display: flex;   
+     margin-left: auto;
+     padding-top: 5px;
+    }
 }
 
 .contact__e {
     margin-right: 30px;
+    @media screen and (max-width:1200px){
+        margin-bottom: 10px;  
+       }
+    
 }
 
 .contact__e,
@@ -128,7 +155,7 @@
     display: flex;
     font-style: normal;
     font-weight: 500;
-    font-size: var(--font-size);
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
@@ -143,6 +170,9 @@ transition: color var(--timing-duration) var(--timing-function);
     color: var(--btn-color-hb);
 }
 
+@media screen and (min-width: 1200px) {
+    font-size: var(--font-size);
+}
 
 }
 
