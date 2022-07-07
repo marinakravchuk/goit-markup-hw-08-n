@@ -1,21 +1,21 @@
 .menu-toggle{
     position: absolute;
-   /* top: 10px;*/
+    top: 10px;
     right: 25px;
     
     border: none;
     background-color: transparent;
     fill: rgba(33, 33, 33, 1);
     transition-property: fill;
-    transition-duration: var(--transition-duration);
+    transition-duration: var(--timing-duration);
     transition-timing-function: var(--timing-function);
     cursor: pointer;
 
     &:hover{
-        fill: var(--accent);
+        fill: var(--btn-color-hb);
     }
     &:hover{
-        fill: var(--accent);
+        fill: var(--btn-color-hb);
     }
     
     @media screen and (min-width:768px) {
@@ -35,7 +35,7 @@
 
     .menu-container{
       
-        background-color: var(--text-color);
+        background-color: var(--default-white);
         position: fixed;
         z-index:900;
         right: 0;
@@ -47,7 +47,7 @@
         opacity: 0;
         pointer-events: none;
         transition-property: opacity;
-        transition-duration: var(--transition-duration);
+        transition-duration: var(--timing-duration);
         transition-timing-function:var(--timing-function) ;
         
         
@@ -83,15 +83,15 @@
     color: rgba(33, 150, 243, 1);
 
     transition-property: color;
-    transition-duration: var(--transition-duration);
+    transition-duration: var(--timing-duration);
     transition-timing-function:var(--timing-function) ;
 
 &:hover,
 &:focus {
-    color: var(--accent);
+    color: var(--btn-color-hb);
 }}
 .menu__link.current{
-    color: var(--accent);}
+    color: var(--btn-color-hb);}
 
    .menu__mail{
    
