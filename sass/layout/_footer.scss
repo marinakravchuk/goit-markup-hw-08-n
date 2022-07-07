@@ -1,117 +1,58 @@
 .footer__section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--additional-color);
-    width: 100%;
-@media screen and (max-width:1199px) {
-    text-align: center;}
-}
-
-
-.footer__section .footer {
-    @media screen and (min-width:1200px) {
-        display: flex;
-    }
-}
-
-    .footer__tab {
-        
-        
-        margin-bottom: 60px;
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-    display: flex;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 0;
-    justify-content: space-between;
-    }
-
-    @media screen and (min-width:1200px) {
-        display: flex;
-        margin-bottom: 0;
-    }
-    }
-
-.address{
-    margin-bottom: 60px;
-    margin-top: 20px;
-    @media screen and (min-width:768px) {
-       margin-bottom: 0; 
-    }
-}
-/*
-.logo-adress {
-}
-.logo {
-}
-.logo-color {
-}
-.bottom-logo-color {
-}
-.contact-link__list {
-}
-.item {
-}
-.addres-link {
-}
-.e-link {
-}
-.ph-link {
-}
-
-.footer-soc {
-}
-.footer-soc__titel {
-}
-.footer-soc__list {
-}
-.footer-soc__item {
-}
-.footer-soc__link {
-}
-.footer-soc__icon {
-}
-
-
-.footer-form {
-}
-.footer-form__title {
-}
-.footer-form__mail {
-}
-.footer-form__input {
-}
-.footer-form__btn {
-}
-.icon-send {
-}*/
-
-
-
-
-
-
-
-/*.logo-adress {
-    margin-right: 70px;
-}
-
-.footer>.container {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer__section {
     margin: 0 auto;
     background: var(--bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    & .footer {
-        display: flex;
-        align-items: baseline;
+    width: 100%;
+    @media screen and (max-width:1199px)
+    {
+        text-align: center;
     }
+    }
+
+    .footer {
+    @media screen and (min-width:1200px) {
+            display: flex;
+            }
+        }
+
+
+
+.footer__tab {
+        
+    margin-bottom: 60px;
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+display: flex;
+margin-left: 15px;
+margin-right: 15px;
+margin-bottom: 0;
+justify-content: space-between;
 }
+
+@media screen and (min-width:1200px) {
+    display: flex;
+    margin-bottom: 0;
+}
+}
+
+
+.logo-adress {
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+        margin-right: 70px;
+    }
+    }
+    
+
+/*
+.footer>.container {
+    display: flex;
+    align-items: baseline;
+}
+*/
+
+
 
 
 
@@ -176,13 +117,27 @@ transition: color var(--timing-duration) var(--timing-function);
 }
 
 .footer-soc {
-margin-right: 93px;
+    justify-content: center;
+    display:inline-block;
+    align-items: baseline;
+    @media screen and (max-width:768px) {
+    margin-top: 60px;}
+@media screen and (min-width:1200px) {
+    margin-top: 0;
+    margin-right: 93px;;
+    justify-content: center;
+    display:inline-block;
+    align-items: baseline;
 }
+}
+
 
 
 .footer-soc__list {
     display: flex;
+    @media screen and (min-width:1200px) {
     margin-bottom: 30px;
+    }
 }
 
 .footer-soc__item {
@@ -221,7 +176,14 @@ margin-right: 93px;
 }
 
 .footer-form {
-  margin-right: auto;
+ 
+    margin-top: 0;
+    margin-left: auto;
+    @media screen and (min-width:1200px) {
+        /*display: flex;*/
+        margin-right: auto;
+    }
+    
 }
 
 .footer-form__title {
@@ -234,12 +196,18 @@ margin-right: 93px;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #FFFFFF;
-}
+
+ }
 
 .footer-form__mail {
-    display: flex;
+    margin-top: 20px;
     border: none;
+    
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 }
+   
 
 
 .footer-form__input {
@@ -254,7 +222,7 @@ margin-right: 93px;
     color: rgba(255, 255, 255, 0.6);
 
     padding-left: 16px;
-    margin-right: 12px;
+   /* margin-right: 12px;*/
 
     transition: border var(--timing-duration) var(--timing-function);
 
@@ -273,6 +241,7 @@ margin-right: 93px;
     position: relative;
     display: flex;
     align-items: center;
+    margin: auto;
     width: 200px;
     height: 50px;
     background-color: var(--btn-color-hb);
@@ -287,6 +256,15 @@ margin-right: 93px;
     fill: currentColor;
     transition: fill var(--timing-duration) var(--timing-function);
     transition: background-color var(--timing-duration) var(--timing-function);
+
+    @media screen and (max-width:1199px) {
+        margin-top: 20px;
+      }
+      @media screen and (min-width:1200px) {
+         margin-left: 12px; 
+      }
+
+
 }
 
 .footer-form__btn:hover,
@@ -306,4 +284,4 @@ margin-right: 93px;
     color: var(--btn-color-hb);
     fill:  var(--btn-color-hb);
 }
-}*/
+}
