@@ -106,7 +106,7 @@ section {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 3px solid red;
+  /* outline: 3px solid red;*/
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -683,10 +683,11 @@ button {
   display: flex;
 }
 
-.our-work__list .our-work__item + .our-work__item {
-  flex-basis: calc(33.3333333333% - 30px);
+/*
+.our-work__list .our-work__item+.our-work__item {
+    flex-basis: calc(100% / 3 - 30px);
 }
-
+*/
 .our-work__item:not(:last-child) {
   margin-right: 30px;
 }
