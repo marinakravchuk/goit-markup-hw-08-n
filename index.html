@@ -74,8 +74,8 @@
             >
               <svg
                 class="menu__icon"
-                height="24"
-                width="24"
+                height="40"
+                width="40"
                 aria-label="переключатель меню"
               >
                 <use href="./images/symbol-defs-1.svg#icon-close-black-18dp-2-1-2-1"></use>
@@ -529,7 +529,27 @@
             placeholder="Введите текст"
             ></textarea>
         </div>
+        <div class="checkbox-field">
+            <label>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="agreement"
+                value="agreement"
+              />
 
+              <svg class="agreement-icon" width="16px" height="15px">
+                <use href="./images/symbol-def"></use>
+              </svg>
+            </label>
+
+            <p class="form-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="form-link" href="">Условия договора</a>
+            </p>
+          </div>
+
+<!---
         <div class="covenant">
             <input class="checkbox-policy visually-hidden"
              type="checkbox" 
@@ -539,7 +559,7 @@
 Соглашаюсь с рассылкой и принимаю
             
             </label><a class="covenant-link" href="">Условия договора</a>
-        </div>
+        </div>-->
 
             <button type="submit" class="modal-bnt-send">Отправить</button>
         </form>

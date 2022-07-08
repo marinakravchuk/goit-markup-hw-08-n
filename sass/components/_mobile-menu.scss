@@ -49,7 +49,7 @@
         transition-property: opacity;
         transition-duration: var(--timing-duration);
         transition-timing-function:var(--timing-function) ;
-        
+        overflow-x: none;
         
         &.is-open{
             
@@ -57,7 +57,7 @@
             pointer-events: all;
             
            display: flex;
-           //flex-wrap: wrap;
+        
            justify-content: space-between;
            flex-direction: column;
 

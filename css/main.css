@@ -360,6 +360,7 @@ button {
   transition-property: opacity;
   transition-duration: var(--timing-duration);
   transition-timing-function: var(--timing-function);
+  overflow-x: none;
 }
 .menu-container.is-open {
   opacity: 1;
@@ -1383,6 +1384,7 @@ button {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transform: opacity var(--timing-duration) var(--timing-function), visibility var(--timing-duration) var(--timing-function);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1392,17 +1394,23 @@ button {
 }
 
 .modal {
+  display: block;
   padding: 40px;
   position: absolute;
+  margin-top: 100px;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.75);
+  opacity: 0;
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1516,59 +1524,123 @@ textarea {
 }
 
 /*Чекбокс*/
-.covenant {
+/*
+.covenant{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; ;
+
+}
+
+.covenant-title  {
+    padding-left: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 2px solid  #212121;
+        border-radius: 3px;
+        margin-right: 8px;
+    } 
+    }
+
+
+
+.checkbox-policy:checked +.covenant-title::before {
+    background-color: #2196F3;
+    background-image: url(../images/icon/checkbox.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.checkbox-policy:focus +.covenant-title::before {
+    border-color: #2196F3;
+}
+
+.checkbox-policy:focus:not(:checked) +.covenant-title::before {
+    border-color: #2196F3;
+  }
+
+  .checkbox-policy:disabled +.covenant-title::before {
+    border-color: #2196F3;
+  }
+
+.covenant-link {
+    display: block;
+    padding-left: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}*/
+.form-text {
+  color: #757575;
+  margin-left: 8.38px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+@media screen and (max-width: 768px) {
+  .form-text {
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #757575;
+  }
+}
+
+.form-link {
+  color: var(--btn-color-hb);
+}
+
+.checkbox-field {
+  position: relative;
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
-.covenant-title {
-  padding-left: 8px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-  display: flex;
-  align-items: center;
+.checkbox {
+  appearance: none;
+  position: absolute;
 }
-.covenant-title::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 3px;
-  margin-right: 8px;
+.checkbox:hover + .agreement-icon {
+  border-color: var(--btn-color-hb);
+}
+.checkbox:focus + .agreement-icon {
+  border-color: var(--default-white);
 }
 
-.checkbox-policy:checked + .covenant-title::before {
-  background-color: #2196F3;
+.checkbox:checked + .agreement-icon {
+  background-color: var(--btn-color-hb);
   background-image: url(../images/icon/checkbox.svg);
   border: none;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.checkbox-policy:focus + .covenant-title::before {
-  border-color: #2196F3;
-}
-
-.checkbox-policy:focus:not(:checked) + .covenant-title::before {
-  border-color: #2196F3;
-}
-
-.checkbox-policy:disabled + .covenant-title::before {
-  border-color: #2196F3;
-}
-
-.covenant-link {
-  display: block;
-  padding-left: 4px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #2196F3;
+.agreement-icon {
+  border: 1px solid rgb(33, 33, 33);
+  display: inline-block;
+  top: 16%;
+  left: -1px;
+  transition-property: border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .modal-bnt-send {
