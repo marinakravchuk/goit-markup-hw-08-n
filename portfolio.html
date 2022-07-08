@@ -73,8 +73,8 @@
             >
               <svg
                 class="menu__icon"
-                height="24"
-                width="24"
+                height="40"
+                width="40"
                 aria-label="переключатель меню"
               >
                 <use href="./images/symbol-defs-1.svg#icon-close-black-18dp-2-1-2-1"></use>
@@ -82,10 +82,10 @@
             </button>
             <ul class="menu__nav">
               <li class="menu__item">
-                <a href="./index.html" class="menu__link current">Студия</a>
+                <a href="./index.html" class="menu__link ">Студия</a>
               </li>
               <li class="menu__item">
-                <a href="./portfolio.html" class="menu__link">Портфолио</a>
+                <a href="./portfolio.html" class="menu__link current">Портфолио</a>
               </li>
               <li class="menu__item">
                 <a href="" class="menu__link">Контакты</a>
@@ -200,7 +200,36 @@
                     <li class="set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/poster.jpg" alt="Постер" width="370">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/poster/img_l.jpg    1x,
+                                        ./images/works/poster/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/poster/img_m.jpg    1x,
+                                        ./images/works/poster/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/poster/img_s.jpg    1x,
+                                      ./images/works/poster/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/poster/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
                                 <p class="card-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -214,7 +243,36 @@
                     <li class="item set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/seafood_restaurant.jpg" alt="Ресторан" width="370">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/seafood_restaurant/img_l.jpg    1x,
+                                        ./images/works/seafood_restaurant/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/seafood_restaurant/img_m.jpg    1x,
+                                        ./images/works/seafood_restaurant/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/seafood_restaurant/img_s.jpg    1x,
+                                      ./images/works/seafood_restaurant/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/seafood_restaurant/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
                                 <p class="card-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -228,7 +286,36 @@
                     <li class="item set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/headphones.jpg" alt="наушники" width="370">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/headphones/img_l.jpg    1x,
+                                        ./images/works/headphones/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/headphones/img_m.jpg    1x,
+                                        ./images/works/headphones/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/headphones/img_s.jpg    1x,
+                                      ./images/works/headphones/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/headphones/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
                                 <p class="card-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 <div class="card-content">
@@ -241,7 +328,36 @@
                     <li class="item set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/boxes.jpg" alt="коробки" width="370">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/boxes/img_l.jpg    1x,
+                                        ./images/works/boxes/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/boxes/img_m.jpg    1x,
+                                        ./images/works/boxes/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/boxes/img_s.jpg    1x,
+                                      ./images/works/boxes/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/boxes/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
                                 <p class="card-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -255,7 +371,36 @@
                     <li class="item set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/monitor.jpg" alt="монитор" width="370">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/monitor/img_l.jpg    1x,
+                                        ./images/works/monitor/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/monitor/img_m.jpg    1x,
+                                        ./images/works/monitor/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/monitor/img_s.jpg    1x,
+                                      ./images/works/monitor/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/monitor/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
                                 <p class="card-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -269,7 +414,36 @@
                     <li class="item set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/magazine.jpg" alt="журнал" width="370">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/magazine/img_l.jpg    1x,
+                                        ./images/works/magazine/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/magazine/img_m.jpg    1x,
+                                        ./images/works/magazine/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/magazine/img_s.jpg    1x,
+                                      ./images/works/magazine/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/magazine/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
                                 <p class="card-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -283,7 +457,36 @@
                     <li class="item set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/lab.jpg" alt="лейба" width="370">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/lab/img_l.jpg    1x,
+                                        ./images/works/lab/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/lab/img_m.jpg    1x,
+                                        ./images/works/lab/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/lab/img_s.jpg    1x,
+                                      ./images/works/lab/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/lab/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
                                 <p class="card-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -297,7 +500,36 @@
                     <li class="item set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/laptop.jpg" alt="ноутбук">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/laptop/img_l.jpg    1x,
+                                        ./images/works/laptop/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/laptop/img_m.jpg    1x,
+                                        ./images/works/laptop/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/laptop/img_s.jpg    1x,
+                                      ./images/works/laptop/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/laptop/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
                                 <p class="card-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
