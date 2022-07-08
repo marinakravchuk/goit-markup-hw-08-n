@@ -11,11 +11,11 @@
     display: flex;
 
 }
-
+/*
 .our-work__list .our-work__item+.our-work__item {
     flex-basis: calc(100% / 3 - 30px);
 }
-
+*/
 .our-work__item:not(:last-child) {
     margin-right: 30px;
 }
