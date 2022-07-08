@@ -29,8 +29,8 @@
 
             <nav class="contact-links nav">
                 <ul class=" nav__site">
-                    <li class="nav__item"><a href="./index.html" class="nav__link  current">Студия</a></li>
-                    <li class="nav__item"><a href="./portfolio.html" class=" nav__link">Портфолио</a></li>
+                    <li class="nav__item"><a href="./index.html" class="nav__link  ">Студия</a></li>
+                    <li class="nav__item"><a href="./portfolio.html" class=" nav__link current">Портфолио</a></li>
                     <li class="nav__item"><a href="" class=" nav__link">Контакты</a></li>
                 </ul>
             </nav>
@@ -156,7 +156,37 @@
                     <li class="set__item">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="./images/works/web_site.jpg" alt="Веб-сайт" width="370">
+                                <picture>
+                                    <source
+                                      media="(min-width:1200px)"
+                                      srcset="
+                                      ./images/works/web_site/img_l.jpg    1x,
+                                        ./images/works/web_site/img_l@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(min-width:768px)"
+                                      srcset="
+                                      ./images/works/web_site/img_m.jpg    1x,
+                                        ./images/works/web_site/img_m@2x.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <source
+                                      media="(max-width:767px)"
+                                      srcset="
+                                      ./images/works/web_site/img_s.jpg    1x,
+                                      ./images/works/web_site/img_s@2x.jpg  2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                
+                                    <img src="./images/works/web_site/img_s.jpg" alt="Веб-сайт" width="450">
+                                  </picture>
+                                
                             <p class="card-top-text ">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
