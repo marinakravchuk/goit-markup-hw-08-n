@@ -20,7 +20,10 @@
     
     @media screen and (min-width:768px) {
         display: none;
-    }}
+    }
+}
+
+
     .menu-toggle .icon-cross{
         display: none;
     }
@@ -75,7 +78,12 @@
     font-weight: 500;
     color: rgba(33, 33, 33, 1);
    } 
-   
+   .menu__container {
+    width: 100%;
+   }
+
+
+
    .menu__contacts{
     text-decoration: none;
     font-size: 34px;
