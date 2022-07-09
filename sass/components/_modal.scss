@@ -276,7 +276,7 @@
         border-color: var(--btn-color-hb);
     }
     &:focus+.agreement-icon {
-        border-color: var(--default-white);
+        border-color: var(--btn-color-hb);
     }
 }
 .checkbox:checked+.agreement-icon{

@@ -473,11 +473,11 @@ button {
   padding-top: 118px;
   text-align: center;
   background-color: var(--bg-color);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-img/mobile/hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-img/hero/mobile/hero.jpg);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__container {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-img/mobile/hero@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-img/mobile/hero@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -583,6 +583,7 @@ button {
   }
   .benefit__item:last-child {
     margin-right: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -1626,7 +1627,7 @@ textarea {
   border-color: var(--btn-color-hb);
 }
 .checkbox:focus + .agreement-icon {
-  border-color: var(--default-white);
+  border-color: var(--btn-color-hb);
 }
 
 .checkbox:checked + .agreement-icon {
