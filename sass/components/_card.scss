@@ -1,5 +1,5 @@
 .card {
-    width: 370px;
+    width: 450px;
     height: 404px;
     overflow: hidden;
     background-color: #FFFFFF;
@@ -12,6 +12,16 @@
         box-shadow: var(--card-shadow);
         border-radius: 0px 0px 4px 4px;
     }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        }
+
+        @media screen and (min-width: 1199px) {
+            width: 370px;
+}
+
+
 }
 
 .card-content {
@@ -41,7 +51,7 @@
         left: 0;
         top: 0;
         background-color: rgba(33, 150, 243, 0.9);
-        padding: 63px 24px;
+        padding: 77px 24px;
     
 
         transform: translateY(100%);
@@ -49,4 +59,12 @@
         .set__item:hover & {
             transform: translateY(0%)
         }
+
+        @media screen and (min-width: 768px) {
+        padding: 49px 24px;
+        }
+
+        @media screen and (min-width: 1199px) {
+            padding: 63px 24px;
+}
 }
