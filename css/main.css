@@ -1018,10 +1018,15 @@ button {
 .card-content__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: none;
   letter-spacing: 0.06em;
   align-items: center;
   /* outline: 1px solid red;*/
+}
+@media screen and (min-width: 1199px) {
+  .card-content__title {
+    line-height: 2;
+  }
 }
 
 .card-content__text {
@@ -1521,6 +1526,12 @@ button {
   left: 7px;
   top: 50%;
   transform: translateY(-50%);
+  fill: currentColor;
+  pointer-events: none;
+  transition: fill 250ms var(--timing-function);
+}
+.modal-icon:focus, .modal-icon:hover {
+  fill: #2196F3;
 }
 
 .modal-input {
@@ -1531,7 +1542,7 @@ button {
   fill: currentColor;
   padding-left: 30px;
   outline: none;
-  transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function);
 }
 .modal-input:focus, .modal-input:hover {
   border-color: #2196F3;
