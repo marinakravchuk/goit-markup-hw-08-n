@@ -38,7 +38,7 @@
     background-color: var(--bg-color);
     
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../../images/background-img/hero/mobile/hero.jpg);
+    url(./../images/background-img/hero/mobile/hero.jpg);
     @include mq(retina){
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
     url(../../images/background-img/hero/mobile/hero@2x.jpg);
