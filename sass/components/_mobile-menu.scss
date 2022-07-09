@@ -78,12 +78,9 @@
     font-weight: 500;
     color: rgba(33, 33, 33, 1);
    } 
-   .menu__container {
-    width: 100%;
-   }
+   
 
-
-
+   
    .menu__contacts{
     text-decoration: none;
     font-size: 34px;
@@ -123,8 +120,9 @@
     position: relative;
     margin-right: 20px;
    }
+
    .menu__social-item::before {
-       content: "";
+     /*  content: "";*/
        position: absolute;
        right:-15%;
        
