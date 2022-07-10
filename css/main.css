@@ -621,6 +621,11 @@ button {
 }
 @media screen and (min-width: 768px) {
   .icons {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icons {
     width: 270px;
   }
 }
@@ -797,6 +802,7 @@ button {
 @media screen and (min-width: 1200px) {
   .section__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -965,7 +971,7 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width1200px) {
+@media screen and (min-width: 1200px) {
   .set {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1203,7 +1209,7 @@ button {
 }
 
 .footer-form {
-  margin-top: 0;
+  margin-top: 60px;
   margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
@@ -1364,7 +1370,7 @@ button {
 }
 
 .card {
-  width: 450px;
+  /* width: 450px;*/
   height: 404px;
   overflow: hidden;
   background-color: #FFFFFF;
@@ -1449,7 +1455,7 @@ button {
   display: block;
   padding: 40px;
   position: absolute;
-  margin-top: 100px;
+  /* margin-top: 100px;*/
   top: 50%;
   left: 50%;
   min-width: 450px;
@@ -1468,12 +1474,14 @@ button {
   .modal {
     min-width: 450px;
     min-height: 609px;
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
     min-height: 581px;
+    margin-top: 0px;
   }
 }
 

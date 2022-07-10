@@ -177,8 +177,10 @@ transition: color var(--timing-duration) var(--timing-function);
 
 .footer-form {
  
-    margin-top: 0;
+    margin-top: 60px;
     margin-left: auto;
+    
+
     @media screen and (min-width:1200px) {
         /*display: flex;*/
         margin-right: auto;

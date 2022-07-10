@@ -24,7 +24,7 @@
     display: block;
     padding: 40px;
     position: absolute;
-    margin-top: 100px;
+   /* margin-top: 100px;*/
     top: 50%;
     left: 50%;
     min-width: 450px;
@@ -48,12 +48,14 @@
 
         @media screen and (min-width:768px){
             min-width: 450px;
-            min-height: 609px;  
+            min-height: 609px; 
+            margin-top: 0px; 
         }
         
         @media screen and (min-width:1200px) {
             min-width: 528px;
             min-height: 581px;
+            margin-top: 0px;
         }
     }
 
