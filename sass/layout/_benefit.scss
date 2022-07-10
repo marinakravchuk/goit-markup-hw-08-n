@@ -23,7 +23,7 @@
 }
 
 .benefit__title{
-
+display: block;
     font-style: normal;
     font-weight: 700;
     font-size: var(--font-size);
@@ -63,12 +63,16 @@
     margin-left: 30px;
 
 
-    &:last-child {
+    &:nth-child(n +3) {
         margin-right: 0;
-    margin-bottom: 30px;
-
+    margin-bottom: 0px;
     }
 }
+
+@media (min-width: 1200px)
+    {
+        margin-bottom: 0px;
+    }
 }
 
 
